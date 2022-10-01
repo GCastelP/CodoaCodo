@@ -1,0 +1,172 @@
+.degraded {
+    background: black;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+.degraded img {
+    opacity: 1;
+    transition: 0.5s opacity;
+  } 
+   
+  .degraded .degraded-desc {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0px;
+    color: white;
+    font-size: 1.2em;
+    left: 0px;
+    padding: 10px 15px;
+    position: absolute;
+    transition: 0.5s padding;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .degrade:hover img {
+    opacity: 0.7;
+  }
+  
+  .centrado {
+    text-align: right;
+    padding: 0.5em;
+  }
+  
+  .textizq {
+    text-align: left;
+    padding: 0.5em;
+  }
+  
+  .txtRightCss {
+    position: inherit;
+    left: 40%;
+    font-size: 1.5vw;
+  }
+  
+  .txtDownCss {
+    position: relative;
+    bottom: -50%; 
+  }
+  
+ 
+  .foot {
+    background-color: #1c445a;
+  } 
+
+
+@media (max-width: 575px) {
+    .bsAsContainer {
+        flex-direction: column;
+    }
+
+    .imageDescription {
+        margin-left: 3rem;
+    }
+
+    .overlay-text {
+        right: 40px;
+        bottom: 100px;
+        width: 70%;
+    }
+
+    .mainImage {
+        height: 25rem;
+    }
+
+    .rightImage {
+        width: 100%;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+    .footerList {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerList li {
+       margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+    .bsAsContainer {
+        flex-direction: column;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .imageDescription {
+        margin-left: 3.5rem;
+    }
+
+    .overlay-text {
+        right: 50px;
+        bottom: 120px;
+        width: 53%;
+    }
+
+    .mainImage {
+        height: 30rem;
+    }
+    .footerList {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerList li {
+       margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .textContainer {
+        width: 50%;
+    }
+
+    .imageDescription {
+        margin-left: 2rem;
+    }
+
+    .overlay-text {
+        right: 70px;
+        bottom: 120px;
+        width: 40%;
+    }
+
+    .mainImage {
+        height: 35rem;
+    }
+
+    .footerList {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerList li {
+       margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .textContainer {
+        width: 33%;
+    }
+
+    .imageDescription {
+        margin-left: 3rem;
+    }
+
+    .overlay-text {
+        right: 100px;
+        bottom: 150px;
+        width: 30%;
+    }
+
+    .mainImage {
+        height: 43rem;
+    }
+
+
+}
