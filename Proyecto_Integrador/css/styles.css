@@ -1,0 +1,757 @@
+:root{
+    --red: #ff2e63;
+    --black:#252a34;
+    --blue:#08d9d6;
+    --White:#eaeaea;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+    font-family: "Raleway", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Go to*/
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    width: 40px;
+    height:40px;
+    border: 2px solid var(--red);
+    background-color: #fff;
+    border-radius: 24px;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 400ms;
+}
+
+
+.go-top > span{
+    font-size: 30px;
+}
+
+.go-top:hover{
+    border: 2px solid var(--White);
+    background-color:var(--red)
+    }
+
+.go-top:hover span{
+    color:var(--black);
+}
+/** Skew **/
+.skew-abajo{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 0vh 100vw;
+    border-style:solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+
+
+
+/** Menú de Navegación**/
+
+#header{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .logo-box{
+    margin-left: 20px;
+}
+
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.menu .list-container{
+    margin-right: 20px;
+}
+
+
+.menu .list-container .lists{
+    display: flex;
+}
+
+
+
+.menu .list-container .lists li{
+    list-style: none;
+}
+
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu .list-container .lists li a.activo{
+    background-color: var(--red);
+    color: #fff;
+}
+
+.menu .list-container .lists li a:hover{
+    background-color: var(--red);
+    color: #fff;
+}
+
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+
+/** Menú de Navegación**/
+
+
+/** IMG header **/
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
+}
+
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header .welcome h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+    
+    
+}
+
+.img-header .welcome hr{
+    width: 40%;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-header .welcome p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.img-header .welcome>button{
+    width: 170px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-header .welcome>button:hover{
+    background-color: var(--blue);
+}
+
+/** IMG header **/
+
+
+/** Acerca de Nosotros**/
+.acerca-de{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.acerca-de .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.acerca-de .info-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.acerca-de .info-container p{
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 35px;
+    margin: 10px 0px; 
+}
+
+.acerca-de .info-container .about-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px ;
+}
+
+
+
+.acerca-de .info-container .about-gallery img{
+    width: calc(33.3% - 10px) ;
+    height: 100%;
+    object-fit: fill;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer; 
+        
+}
+
+
+
+.acerca-de .info-container .about-more{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+
+.acerca-de .info-container .about-more button{
+    width: 120px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.acerca-de .info-container .about-more button:hover{
+    background-color: var(--blue);
+}
+
+/** Acerca de Nosotros**/
+
+
+/* Nuestros proyectos */
+
+.our-projects{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/img-2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.our-projects .deg-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.our-projects .ejeZproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.our-projects .container-project{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.our-projects .container-project .project-title{
+    border:2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.our-projects .container-project .project-title h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.our-projects .container-project .project-title hr{
+    background: #fff;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.our-projects .container-project .projects-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.our-projects .container-project .projects-img img{
+    width: calc(30% - 10px);
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Nuestros proyectos */
+
+
+/* Testimonios */
+
+.testimonios{
+    width: 100%;
+    margin-top: 120px;
+}
+
+
+.testimonios .testimonios-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonios .testimonios-title h2{
+    font-size: 50px;
+    color: var(--black);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.testimonios .testimonios-title hr{
+    width: 60%;
+    margin: auto;
+    height: 3px;
+    background-color: var(--black);
+    border: none;
+   
+}
+
+
+.testimonios .box-testimonios{
+    width: 90%;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonios .box-testimonios .card-testimonio{
+    width: 45%;
+    margin: 20px;
+}
+
+.testimonios .box-testimonios .card-testimonio .card-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios .box-testimonios .card-testimonio .card-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.testimonios .box-testimonios .card-testimonio .testimonio-text{
+    margin-top: 30px;
+    width: 100%;
+    border: 2px solid var(--red);
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:200ms ;
+}
+
+.testimonios .box-testimonios .card-testimonio .testimonio-text h4{
+    color: var(--red);
+    font-weight: normal;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+
+.testimonios .box-testimonios .card-testimonio .testimonio-text p{
+    font-size: 19px;
+    color: var(--black);
+    text-align: center;
+    line-height: 20px;
+    transition: 200ms;
+}
+
+.testimonios .box-testimonios .card-testimonio .testimonio-text:hover{
+    border: 2px solid var(--blue);
+
+}
+
+.testimonios .box-testimonios .card-testimonio .testimonio-text:hover h4{
+    color: var(--blue);
+
+}
+
+/* Testimonios */
+
+/* Footers */
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/footer.jpg);
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;   
+}   
+
+/*.footer .deg-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+} */
+
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.footer .footer-content .footer-title{
+    width: 50%;
+    margin: auto;
+    border: 2px solid #fff;
+    padding: 15px;
+    background-color: rgba(17, 14, 1, 0.678);
+    border-radius: 15pc;
+}
+
+.footer .footer-content .footer-title h2{
+    text-align: center;
+    color: #fff;
+    font: bold;
+    font-size: 30px;
+    font-weight:600;
+    margin-bottom: 10px;
+    
+}
+
+.footer .footer-content .footer-title hr{
+    width: 80%;
+    margin: auto;
+}
+.footer .footer-content .formulario-content{
+    width: 60%;
+    background-color: #fff;
+    border-radius: 24px;
+    border: 2px solid var(--red);
+    margin:50px auto;
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+
+.footer .footer-content .formulario-content #formulario{
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+}
+
+.footer .footer-content .formulario-content #formulario label{
+    text-align: center;
+    color: var(--black);
+    font-size: 22px;
+    margin: 30px 0px 10px 0px;
+}
+
+
+.footer .footer-content .formulario-content #formulario input{
+   width: 90%;
+   height: 35px;
+   margin: auto;
+   border: 2PX solid var(--red);
+   border-radius: 24px;
+   outline: none;
+   text-align: center;
+}
+
+.footer .footer-content .formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding:10px;
+    border: 2PX solid var(--red);
+    border-radius: 24px;
+    outline: none;
+    font-size: 15px;
+    color: var(--black);
+    padding: 20px;
+}
+.footer .footer-content .formulario-content #formulario .send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.footer .footer-content .formulario-content #formulario .send button{
+    width: 140px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: 0.5s;   
+}
+         
+.footer .footer-content .formulario-content #formulario .send button:hover{
+    background-color: var(--blue);
+}
+
+.footer .footer-content .formulario-content #formulario .mensaje-form{
+    width: 100%;
+}
+
+.footer .mensaje-form p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer .footer-content .footer-text{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(17, 14, 1, 0.678);
+    border-top: 5px solid #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.footer .footer-content .footer-text p{
+    color: #fff;
+    font-size: 25px;
+    
+    
+}
+
+/* Footers */
+
+/* Media Query*/
+
+/*Modificaciones al menu*/
+
+/*.btn-menu > .fa-times{color: var(--red);} 
+.btn-menu > .fa-bars:hover{color:var(--red);}
+*/
+
+@media screen and (max-width:900px){
+    .btn-menu > .fa-bars{
+        display: block;
+        position:absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 28px;
+       /* color: var(--black);*/
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .btn-menu >.fa-bars:hover{color:var(--red);}
+   /* .btn-menu >.fa-times{color: var(--red);} */
+
+
+    /* Ocultamos el menu list-container*/
+
+   .menu .list-container{
+        position: absolute;
+        top:60px;
+        left: 0%;  /*efecto de sobreponer sobre el fondo, una pantalla  blanca, que se desplaza hacia la izquierda con todo el list-container*/
+        width: 100%;
+        height: calc(100vh - 60px);
+        background:#fff;
+    } 
+
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;  /*	Displays an element as a block-level flex container*/
+        justify-content: center; /* alinea horizontalmente */
+        align-items: center;  /* alinea verticalmente */
+        flex-direction: column; /* The flexible items are displayed vertically, as a column */
+        border-top:4px solid var(--red); /*genera un borde en el tope solido color rojo*/
+    }
+
+    .menu .list-container .lists li{
+        width: 90%;
+        margin: 10px 0px;
+        border-bottom: 1px solid var(--red);
+        text-align: center;
+        
+    } 
+
+    .menu .list-container .lists li a{
+        padding:20px 0px;
+       
+    }
+
+    .menu .list-container .lists li a.activo{
+        background: none;
+        color: var(--red);
+        
+    }
+
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--red);
+        
+    }
+}
+    
+
+@media only screen and (max-width:773px ){
+
+    /** IMG header**/
+    .img-header .welcome h1{font-size: 40px;}
+    .img-header .welcome > button{width: 130px; font-size: 20px;}
+}
+
+    /** Acerca de nosotros **/
+    .acerca-de .info-container .about-gallery{flex-direction: column;}
+    .acerca-de .info-container .about-gallery img{width: 100%;}
+
+    /** Nuestros Proyectos **/
+    .our-projects .container-project .project-img img{width: 80%; margin-bottom: 30px;}
+    
+
+
+@media only screen and (max-width:590px){
+    /** IMG header**/
+    .img-header .welcome h1{font-size: 30px;}
+    .img-header .welcome hr{width: 250px;}
+    .img-header .welcome p{font-size: 17px;}
+    .img-header .welcome > button{width: 100px; font-size: 17px;}
+}
+    /** Acerca de nosotros **/
+    .acerca-de .info-container h1{font-size: 30px;}
+    .acerca-de .info-container p{font-size: 15px;}
+
+@media only screen and (max-width:446px){
+    /** Nuestros Proyectos **/
+    .our-projects .container-project .project-title h2{font-size: 30px;}
+}
+
+    /** Testimonios**/
+@media only screen and (max-width:890px){
+    .testimonios .box-testimonio .card-testimonio .card-img img{width: 200px; height: 200px;}
+    .testimonios .box-testimonio .card-testimonio{width: 100%;}
+    .testimonios .box-testimonio .card-testimonio .testimonio-text h4{font-size: 25px;}
+    .testimonios .box-testimonio .card-testimonio .testimonio-text p{font-size: 17px; line-height: 35px;}
+}
+
+@media only screen and (max-width:773px){
+    .testimonios .box-testimonio .card-testimonio .card-img img{width: 200px; height: 200px;}
+    .testimonios .box-testimonio .card-testimonio{width: 100%;}
+    .testimonios .box-testimonio .card-testimonio .testimonio-text h4{font-size: 20px;}
+    .testimonios .box-testimonio .card-testimonio .testimonio-text p{font-size: 17px; line-height: 35px;}
+}
+
+
+
+
+    /** Footer **/
+@media only screen and (max-width:900px){
+    .footer .formulario-content{width: 85%; padding:20px;}
+    .footer .formulario-content #formulario input{width: 100%;}
+    .footer .formulario-content #formulario textarea{width: 100%;}
+}
+@media only screen and (max-width:590px){
+    .footer .formulario-content{width: 95%; padding:20px;}
+    .footer .formulario-content #formulario label{font-size: 17px;}
+    .footer .formulario-content #formulario input{width: 100%; font-size: 17px;}
+    .footer .formulario-content #formulario textarea{width: 100%;}
+    .footer .formulario-content #formulario .mensaje-form p{font-size: 17px;}
+    .footer .footer-text{width: 100%; padding: 0px 30px;}
+    .footer .footer-text p{font-size: 17px;}
